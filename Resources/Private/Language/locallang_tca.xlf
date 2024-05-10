@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_modulor">
+	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_container">
 		<header/>
 		<body>
-			<trans-unit id="title">
-				<source>Ps14 Modulor</source>
+			<trans-unit id="two-column.title">
+				<source>Ps14 Two Column</source>
 			</trans-unit>
-			<trans-unit id="description">
-				<source>TYPO3 Extension serves as a template for TYPO3 modules</source>
+			<trans-unit id="two-column.description">
+				<source>Container modules with two columns</source>
+			</trans-unit>
+
+			<trans-unit id="column.01">
+				<source>Column 1</source>
+			</trans-unit>
+			<trans-unit id="column.02">
+				<source>Column 2</source>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
