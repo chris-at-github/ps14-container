@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2024-05-13T23:00:00Z" product-name="ps14_container" target-language="de">
+		<header/>
+		<body>
+			<trans-unit id="column.sheet.main">
+				<target>Main</target>
+			</trans-unit>
+			<trans-unit id="column.column-width.01">
+				<target>Column 1: Width</target>
+			</trans-unit>
+			<trans-unit id="column.column-width.02">
+				<target>Column 2: Width</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

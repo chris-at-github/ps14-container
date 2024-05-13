@@ -21,16 +21,31 @@ tt_content {
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
 
-		dataProcessing {
-			200 = Ps14\Container\DataProcessing\ModuleProcessor
-			200 {
-				importCss {
-					10 = /assets/css/modules/container.css
-				}
+#		dataProcessing {
+#			200 = Ps14\Container\DataProcessing\ModuleProcessor
+#			200 {
+#				importCss {
+#					10 = /assets/css/modules/container-columns.css
+#				}
+#			}
+#		}
+	}
 
-				importJs {
-					10 = /assets/js/modules/container.js
-				}
+	ps14_container_2_column < .ps14_container
+	ps14_container_2_column {
+		templateName = ContainerTwoColumn
+
+		dataProcessing {
+			4001 = B13\Container\DataProcessing\ContainerProcessor
+			4001 {
+				colPos = 4001
+				as = columnOne
+			}
+
+			4002 = B13\Container\DataProcessing\ContainerProcessor
+			4002 {
+				colPos = 4002
+				as = columnTwo
 			}
 		}
 	}
@@ -40,52 +55,14 @@ tt_content {
 // Settings
 plugin.tx_ps14container {
 	settings {
-		images {
-			main {
-				maxWidth = 1200
-				cropVariant = desktop
-
-				mediaQueries {
-					0 {
-						maxWidth = 1200
-						cropVariant = desktop
-						mediaQuery = (min-width: 992px)
-					}
-					1 {
-						maxWidth = 992
-						cropVariant = desktop
-						mediaQuery = (min-width: 768px)
-					}
-					2 {
-						maxWidth = 768
-						cropVariant = mobile
-						mediaQuery = (min-width: 576px)
-					}
-					3 {
-						maxWidth = 576
-						cropVariant = mobile
-						mediaQuery = (min-width: 0px)
-					}
-				}
-			}
-
-			element {
-				maxWidth = 480
-				cropVariant = default
-
-				mediaQueries {
-					1 {
-						maxWidth = 480
-						cropVariant = default
-						mediaQuery = (min-width: 768px)
-					}
-					3 {
-						maxWidth = 320
-						cropVariant = default
-						mediaQuery = (min-width: 0px)
-					}
-				}
-			}
+		columnWidth {
+			3 = 25%
+			4 = 33%
+			6 = 50%
+			8 = 66%
+			9 = 75%
 		}
 	}
 }
+
+module.tx_ps14container.settings < plugin.tx_ps14container.settings
