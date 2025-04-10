@@ -3,11 +3,18 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_container" target-language="de">
 		<header/>
 		<body>
-			<trans-unit id="title">
-				<target>Ps14 Container</target>
+			<trans-unit id="two-column.title">
+				<target>Ps14 Two Column</target>
 			</trans-unit>
-			<trans-unit id="description">
-				<target>TYPO3 Extension serves as a template for TYPO3 modules</target>
+			<trans-unit id="two-column.description">
+				<target>Container modules with two columns</target>
+			</trans-unit>
+
+			<trans-unit id="three-column.title">
+				<target>Ps14 Three Column</target>
+			</trans-unit>
+			<trans-unit id="three-column.description">
+				<target>Container modules with three columns</target>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">

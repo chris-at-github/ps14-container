@@ -12,6 +12,9 @@
 			<trans-unit id="column.column-width.02">
 				<source>Column 2: Width</source>
 			</trans-unit>
+			<trans-unit id="column.column-width.03">
+				<source>Column 3: Width</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

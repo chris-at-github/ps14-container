@@ -10,11 +10,21 @@
 				<source>Container modules with two columns</source>
 			</trans-unit>
 
+			<trans-unit id="three-column.title">
+				<source>Ps14 Three Column</source>
+			</trans-unit>
+			<trans-unit id="three-column.description">
+				<source>Container modules with three columns</source>
+			</trans-unit>
+
 			<trans-unit id="column.01">
 				<source>Column 1</source>
 			</trans-unit>
 			<trans-unit id="column.02">
 				<source>Column 2</source>
+			</trans-unit>
+			<trans-unit id="column.03">
+				<source>Column 3</source>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">

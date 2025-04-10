@@ -49,6 +49,31 @@ tt_content {
 			}
 		}
 	}
+
+	ps14_container_3_column < .ps14_container
+	ps14_container_3_column {
+		templateName = ContainerThreeColumn
+
+		dataProcessing {
+			4001 = B13\Container\DataProcessing\ContainerProcessor
+			4001 {
+				colPos = 4001
+				as = columnOne
+			}
+
+			4002 = B13\Container\DataProcessing\ContainerProcessor
+			4002 {
+				colPos = 4002
+				as = columnTwo
+			}
+
+			4003 = B13\Container\DataProcessing\ContainerProcessor
+			4003 {
+				colPos = 4003
+				as = columnThree
+			}
+		}
+	}
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
