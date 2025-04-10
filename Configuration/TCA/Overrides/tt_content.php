@@ -40,6 +40,12 @@
 // Flexform
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
 	'*',
+	'FILE:EXT:ps14_container/Configuration/FlexForms/ContainerTwoColumns.xml',
+	'ps14_container_2_column'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+	'*',
 	'FILE:EXT:ps14_container/Configuration/FlexForms/ContainerThreeColumns.xml',
 	'ps14_container_3_column'
 );
