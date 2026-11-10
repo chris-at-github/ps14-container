@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <main>
+            <ROOT>
+                <sheetTitle>LLL:EXT:ps14_container/Resources/Private/Language/locallang_tca.xlf:flexform.sheet.main</sheetTitle>
+                <type>array</type>
+                <el>
+                    <ratio type="array">
+                        <label>LLL:EXT:ps14_container/Resources/Private/Language/locallang_tca.xlf:flexform.ratio</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <default>50-50</default>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <label>50 % / 50 %</label>
+                                    <value>50-50</value>
+                                </numIndex>
+                                <numIndex index="1" type="array">
+                                    <label>33 % / 66 %</label>
+                                    <value>33-66</value>
+                                </numIndex>
+                                <numIndex index="2" type="array">
+                                    <label>66 % / 33 %</label>
+                                    <value>66-33</value>
+                                </numIndex>
+                                <numIndex index="3" type="array">
+                                    <label>25 % / 75 %</label>
+                                    <value>25-75</value>
+                                </numIndex>
+                                <numIndex index="4" type="array">
+                                    <label>75 % / 25 %</label>
+                                    <value>75-25</value>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </ratio>
+                </el>
+            </ROOT>
+        </main>
+    </sheets>
+</T3DataStructure>

@@ -1,93 +1,65 @@
 // ---------------------------------------------------------------------------------------------------------------------
-// tt_content Definition
+// Container mit zwei und drei Spalten (b13/container)
 tt_content {
-	ps14_container =< lib.contentElement
-	ps14_container {
-		templateName = Container.html
-		layoutRootPaths {
-			10 = EXT:ps14_container/Resources/Private/Layouts/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Container/Layouts/
-		}
+  ps14_container_2_column =< lib.contentElement
+  ps14_container_2_column {
+    templateName = ContainerTwoColumn
 
-		templateRootPaths {
-			10 = EXT:ps14_container/Resources/Private/Templates/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Container/Templates/
-		}
+    templateRootPaths {
+      50 = EXT:ps14_container/Resources/Private/Templates/Content/
+    }
 
-		partialRootPaths {
-			10 = EXT:ps14_container/Resources/Private/Partials/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Container/Partials/
-			30 = EXT:ps14_foundation/Resources/Private/Partials/
-			40 = EXT:ps14_site/Resources/Private/Partials/
-		}
+    partialRootPaths {
+      50 = EXT:ps14_container/Resources/Private/Partials/
+    }
 
-#		dataProcessing {
-#			200 = Ps14\Container\DataProcessing\ModuleProcessor
-#			200 {
-#				importCss {
-#					10 = /assets/css/modules/container-columns.css
-#				}
-#			}
-#		}
-	}
+    dataProcessing {
+      4001 = B13\Container\DataProcessing\ContainerProcessor
+      4001 {
+        colPos = 4001
+        as = columnOne
+        skipRenderingChildContent = 1
+      }
 
-	ps14_container_2_column < .ps14_container
-	ps14_container_2_column {
-		templateName = ContainerTwoColumn
+      4002 < .4001
+      4002 {
+        colPos = 4002
+        as = columnTwo
+      }
+    }
+  }
 
-		dataProcessing {
-			4001 = B13\Container\DataProcessing\ContainerProcessor
-			4001 {
-				colPos = 4001
-				as = columnOne
-			}
+  ps14_container_3_column =< lib.contentElement
+  ps14_container_3_column {
+    templateName = ContainerThreeColumn
 
-			4002 = B13\Container\DataProcessing\ContainerProcessor
-			4002 {
-				colPos = 4002
-				as = columnTwo
-			}
-		}
-	}
+    templateRootPaths {
+      50 = EXT:ps14_container/Resources/Private/Templates/Content/
+    }
 
-	ps14_container_3_column < .ps14_container
-	ps14_container_3_column {
-		templateName = ContainerThreeColumn
+    partialRootPaths {
+      50 = EXT:ps14_container/Resources/Private/Partials/
+    }
 
-		dataProcessing {
-			4001 = B13\Container\DataProcessing\ContainerProcessor
-			4001 {
-				colPos = 4001
-				as = columnOne
-			}
+    dataProcessing {
+      4001 = B13\Container\DataProcessing\ContainerProcessor
+      4001 {
+        colPos = 4001
+        as = columnOne
+        skipRenderingChildContent = 1
+      }
 
-			4002 = B13\Container\DataProcessing\ContainerProcessor
-			4002 {
-				colPos = 4002
-				as = columnTwo
-			}
+      4002 < .4001
+      4002 {
+        colPos = 4002
+        as = columnTwo
+      }
 
-			4003 = B13\Container\DataProcessing\ContainerProcessor
-			4003 {
-				colPos = 4003
-				as = columnThree
-			}
-		}
-	}
+      4003 < .4001
+      4003 {
+        colPos = 4003
+        as = columnThree
+      }
+    }
+  }
 }
-
-// ---------------------------------------------------------------------------------------------------------------------
-// Settings
-plugin.tx_ps14container {
-	settings {
-		columnWidth {
-			3 = 25%
-			4 = 33%
-			6 = 50%
-			8 = 66%
-			9 = 75%
-		}
-	}
-}
-
-module.tx_ps14container.settings < plugin.tx_ps14container.settings

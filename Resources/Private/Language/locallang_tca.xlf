@@ -1,35 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_container">
-		<header/>
-		<body>
-			<trans-unit id="two-column.title">
-				<source>Ps14 Two Column</source>
-			</trans-unit>
-			<trans-unit id="two-column.description">
-				<source>Container modules with two columns</source>
-			</trans-unit>
-
-			<trans-unit id="three-column.title">
-				<source>Ps14 Three Column</source>
-			</trans-unit>
-			<trans-unit id="three-column.description">
-				<source>Container modules with three columns</source>
-			</trans-unit>
-
-			<trans-unit id="column.01">
-				<source>Column 1</source>
-			</trans-unit>
-			<trans-unit id="column.02">
-				<source>Column 2</source>
-			</trans-unit>
-			<trans-unit id="column.03">
-				<source>Column 3</source>
-			</trans-unit>
-
-			<trans-unit id="elements.record-type.default">
-				<source>Default</source>
-			</trans-unit>
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="messages" date="2026-11-10T00:00:00Z" product-name="ps14_container">
+    <header/>
+    <body>
+      <trans-unit id="two-column.title">
+        <source>Two columns</source>
+      </trans-unit>
+      <trans-unit id="two-column.description">
+        <source>Container with two columns</source>
+      </trans-unit>
+      <trans-unit id="three-column.title">
+        <source>Three columns</source>
+      </trans-unit>
+      <trans-unit id="three-column.description">
+        <source>Container with three columns</source>
+      </trans-unit>
+      <trans-unit id="column.1">
+        <source>Column 1</source>
+      </trans-unit>
+      <trans-unit id="column.2">
+        <source>Column 2</source>
+      </trans-unit>
+      <trans-unit id="column.3">
+        <source>Column 3</source>
+      </trans-unit>
+      <trans-unit id="flexform.label">
+        <source>Layout</source>
+      </trans-unit>
+      <trans-unit id="flexform.sheet.main">
+        <source>Layout</source>
+      </trans-unit>
+      <trans-unit id="flexform.ratio">
+        <source>Column widths</source>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

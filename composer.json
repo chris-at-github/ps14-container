@@ -1,32 +1,32 @@
 {
-	"name": "ps14/container",
-	"type": "typo3-cms-extension",
-	"description": "TYPO3 extension for managing container modules with two, three, or four columns",
-	"keywords": [
-		"TYPO3",
-		"extension"
-	],
-	"homepage": "http://ps14.de/",
-	"require": {
-		"typo3/cms-core": "^12.4"
-	},
-	"suggest": {
-	},
-	"autoload": {
-		"psr-4": {
-			"Ps14\\Container\\": "Classes"
-		}
-	},
-	"license": "closed",
-	"authors": [
-		{
-			"name": "Christian Pschorr",
-			"email": "pschorr.christian@gmail.com"
-		}
-	],
-	"extra": {
-		"typo3/cms": {
-			"extension-key": "ps14_container"
-		}
-	}
+    "name": "ps14/ps14_container",
+    "type": "typo3-cms-extension",
+    "description": "Container content elements with two and three columns based on b13/container.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "container"
+    ],
+    "homepage": "https://ps14.de/",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Christian Pschorr",
+            "email": "pschorr.christian@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "b13/container": "^4.1",
+        "ps14/ps14_foundation": "@dev",
+        "typo3/cms-core": "^14.3"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ps14_container"
+        },
+        "branch-alias": {
+            "dev-v14-dev": "14.0.x-dev"
+        }
+    }
 }

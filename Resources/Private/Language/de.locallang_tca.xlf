@@ -1,25 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2024-03-25T23:00:00Z" product-name="ps14_container" target-language="de">
-		<header/>
-		<body>
-			<trans-unit id="two-column.title">
-				<target>Ps14 Two Column</target>
-			</trans-unit>
-			<trans-unit id="two-column.description">
-				<target>Container modules with two columns</target>
-			</trans-unit>
-
-			<trans-unit id="three-column.title">
-				<target>Ps14 Three Column</target>
-			</trans-unit>
-			<trans-unit id="three-column.description">
-				<target>Container modules with three columns</target>
-			</trans-unit>
-
-			<trans-unit id="elements.record-type.default">
-				<target>Default</target>
-			</trans-unit>
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="messages" date="2026-11-10T00:00:00Z" product-name="ps14_container" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="two-column.title">
+        <target>Zwei Spalten</target>
+      </trans-unit>
+      <trans-unit id="two-column.description">
+        <target>Container mit zwei Spalten</target>
+      </trans-unit>
+      <trans-unit id="three-column.title">
+        <target>Drei Spalten</target>
+      </trans-unit>
+      <trans-unit id="three-column.description">
+        <target>Container mit drei Spalten</target>
+      </trans-unit>
+      <trans-unit id="column.1">
+        <target>Spalte 1</target>
+      </trans-unit>
+      <trans-unit id="column.2">
+        <target>Spalte 2</target>
+      </trans-unit>
+      <trans-unit id="column.3">
+        <target>Spalte 3</target>
+      </trans-unit>
+      <trans-unit id="flexform.label">
+        <target>Layout</target>
+      </trans-unit>
+      <trans-unit id="flexform.sheet.main">
+        <target>Layout</target>
+      </trans-unit>
+      <trans-unit id="flexform.ratio">
+        <target>Spaltenbreiten</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

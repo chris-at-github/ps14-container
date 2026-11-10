@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <main>
+            <ROOT>
+                <sheetTitle>LLL:EXT:ps14_container/Resources/Private/Language/locallang_tca.xlf:flexform.sheet.main</sheetTitle>
+                <type>array</type>
+                <el>
+                    <ratio type="array">
+                        <label>LLL:EXT:ps14_container/Resources/Private/Language/locallang_tca.xlf:flexform.ratio</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <default>33-33-33</default>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <label>33 % / 33 % / 33 %</label>
+                                    <value>33-33-33</value>
+                                </numIndex>
+                                <numIndex index="1" type="array">
+                                    <label>25 % / 50 % / 25 %</label>
+                                    <value>25-50-25</value>
+                                </numIndex>
+                                <numIndex index="2" type="array">
+                                    <label>50 % / 25 % / 25 %</label>
+                                    <value>50-25-25</value>
+                                </numIndex>
+                                <numIndex index="3" type="array">
+                                    <label>25 % / 25 % / 50 %</label>
+                                    <value>25-25-50</value>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </ratio>
+                </el>
+            </ROOT>
+        </main>
+    </sheets>
+</T3DataStructure>
