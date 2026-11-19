@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.4",
         "b13/container": "^4.1",
-        "ps14/ps14_foundation": "@dev",
+        "ps14/ps14_foundation": "^14.0",
         "typo3/cms-core": "^14.3"
     },
     "extra": {
@@ -26,7 +26,7 @@
             "extension-key": "ps14_container"
         },
         "branch-alias": {
-            "dev-v14-dev": "14.0.x-dev"
+            "dev-main": "14.x-dev"
         }
     }
 }
